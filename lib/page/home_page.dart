@@ -10,6 +10,7 @@ class HomePage extends StatefulWidget {
 class _HomeState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -26,7 +27,7 @@ class _HomeState extends State<HomePage> {
                   padding: const EdgeInsets.all(2), // Border radius
                   child: ClipOval(
                     child: Image.asset(
-                      'assets/avatar_profile6.jpg',
+                      'assets/avatar_profile7.jpg',
                       fit: BoxFit.fill,
                     ),
                   ),
@@ -37,7 +38,7 @@ class _HomeState extends State<HomePage> {
               height: 24,
             ),
             const Text(
-              "Yusman",
+              "Eren Yeager",
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
@@ -55,6 +56,16 @@ class _HomeState extends State<HomePage> {
               ),
             ),
             Padding(
+              padding: const EdgeInsets.all(24),
+              child: SizedBox(
+                height: size.height / 6.4,
+                child: Image.asset(
+                  "assets/android_banner.gif",
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
+            Padding(
               padding: const EdgeInsets.all(18.0),
               child: Column(
                 children: const [
@@ -68,14 +79,6 @@ class _HomeState extends State<HomePage> {
                   ),
                   Text(
                     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Color(0xff252525),
-                    ),
-                    textAlign: TextAlign.justify,
-                  ),
-                  Text(
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
                     style: TextStyle(
                       fontSize: 16,
                       color: Color(0xff252525),
