@@ -4,6 +4,9 @@ pengenalan basic widget
 - center
 - Text
 - button
+- padding
+- sizedBox
+- Image
 - etc
 ## ScreenShot
 | Login Page        |  Home Page   |
